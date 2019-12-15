@@ -84,10 +84,10 @@ bootRun {
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
 }
 
-webdriverBinaries {
+/*webdriverBinaries {
     chromedriver '2.45.0'
     geckodriver '0.24.0'
-}
+}*/
 
 tasks.withType(Test) {
     systemProperty "geb.env", System.getProperty('geb.env')
